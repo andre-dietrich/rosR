@@ -1,0 +1,4 @@
+<launch>
+	<node name="R_Publisher" pkg="rosR" type="random_publisher.R" />
+	<node name="R_Subscriber" pkg="rosR" type="random_subscriber.R" />
+</launch>
