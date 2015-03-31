@@ -55,12 +55,12 @@ unsigned int rros_stream_read_uint32(IStreamR *s){
 	unsigned int val;
 	s->next(val);
 	return val; }
-signed long rros_stream_read_int64(IStreamR *s){
-	signed long val;
+signed long long rros_stream_read_int64(IStreamR *s){
+	signed long long val;
 	s->next(val);
 	return val; }
-unsigned long rros_stream_read_uint64(IStreamR *s){
-	unsigned long val;
+unsigned long long rros_stream_read_uint64(IStreamR *s){
+	unsigned long long val;
 	s->next(val);
 	return val; }
 float rros_stream_read_float32(IStreamR *s){
@@ -101,12 +101,12 @@ std::vector<unsigned int>* rros_stream_read_uint32_array(IStreamR *s, unsigned i
 	std::vector<unsigned int> *val = new std::vector<unsigned int>(size);
 	s->next(*val);
 	return val; }
-std::vector<signed long>* rros_stream_read_int64_array(IStreamR *s, unsigned int size){
-	std::vector<signed long> *val = new std::vector<signed long>(size);
+std::vector<signed long long>* rros_stream_read_int64_array(IStreamR *s, unsigned int size){
+	std::vector<signed long long> *val = new std::vector<signed long long>(size);
 	s->next(*val);
 	return val; }
-std::vector<unsigned long>* rros_stream_read_uint64_array(IStreamR *s, unsigned int size){
-	std::vector<unsigned long> *val = new std::vector<unsigned long>(size);
+std::vector<unsigned long long>* rros_stream_read_uint64_array(IStreamR *s, unsigned int size){
+	std::vector<unsigned long long> *val = new std::vector<unsigned long long>(size);
 	s->next(*val);
 	return val; }
 std::vector<float>* rros_stream_read_float32_array(IStreamR *s, unsigned int size){

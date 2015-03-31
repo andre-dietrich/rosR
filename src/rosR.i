@@ -20,8 +20,8 @@ namespace std {
 	%template(vector_uint16) 	vector<unsigned short>;
 	%template(vector_int32) 	vector<signed int>;
 	%template(vector_uint32) 	vector<unsigned int>;
-	%template(vector_int64) 	vector<signed long>;
-	%template(vector_uint64) 	vector<unsigned long>;
+	%template(vector_int64) 	vector<signed long long>;
+	%template(vector_uint64) 	vector<unsigned long long>;
 	%template(vector_float32) 	vector<float>;
 	%template(vector_float64) 	vector<double>;
 	%template(vector_string) 	vector<string>;
