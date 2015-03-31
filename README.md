@@ -17,13 +17,8 @@ See also rosR_demos.
 
 ## NOTE 64bit & 32bit
 
-This version runs NOW on 64bit as well as on 32bit systems.The default version is 64bit. If you
-want to use rosR on a 32bit system, run the patch that is included in folder misc:
-
-``` bash
-$ roscd rosR
-$ patch patch -p1 -i misc/32bit.patch
-```
+This version runs NOW on 64bit as well as on 32bit systems.The master branch is the 64bit version. If you
+want to use rosR on a 32bit system, checkout the branch 32bit.
 
 ## Installation
 
