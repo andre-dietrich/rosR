@@ -1,7 +1,7 @@
 # rosR
 
-|||
-|-|-|
+| | |
+| ----------- | ---------------------------------------------------------------------------------------- |
 | Authors     | André Dietrich & Sebastian Zug                                                           |
 | Source      | `git clone` https://gitlab.com/OvGU-ESS/rosR.git                                         |
 | Email       | <mailto:dietrich@ivs.cs.uni-magdeburg.de> & <mailto:zug@ivs.cs.uni-magdeburg.de>         |
