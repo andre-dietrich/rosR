@@ -1,5 +1,13 @@
 # rosR
 
+|||
+|-|-|
+| Authors     | André Dietrich & Sebastian Zug                                                           |
+| Source      | `git clone` https://gitlab.com/OvGU-ESS/rosR.git                                         |
+| Email       | <mailto:dietrich@ivs.cs.uni-magdeburg.de> & <mailto:zug@ivs.cs.uni-magdeburg.de>         |
+| Publication | [The R in Robotics](http://journal.r-project.org/archive/2013-2/dietrich-zug-kaiser.pdf) |
+| Talk By     | Jan Wijffels http://www.r-bloggers.com/using-r-in-robotics-applications-with-ros         |
+
 ## Overview
 
 This package provides an simple interface of standard ros-functionalities for the programming
@@ -13,7 +21,7 @@ publishers and subscribers in R, messages are automatically and online generated
 definition files, and it integrates the possibility to read and therefore analyse bag-files in
 R. We will explain this in more detail within the next sections.
 
-See also rosR_demos.
+See also [rosR_demos](https://gitlab.com/OvGU-ESS/rosR_demos.git).
 
 ## Installation
 
@@ -27,7 +35,7 @@ and run this package.
 If you have already some expertise on working with ROS, then you can install rosR just like any
 ordinary ros-package. Three additional dependencies are required before you can compile it:
 
-- Swig2.0 is required for interfacing C code, and only swig2.0 can generate appropriate code
+- Swig3.0 is required for interfacing C code, and only swig3.0 can generate appropriate code
   for R.
 
   ``` bash
@@ -261,10 +269,3 @@ There is also other functionality defined in src/ros.cpp and lib/ros.R like:
 > ros.Error("...")
 > ros.Warn("...")
 ```
-
-## Contact
-
-| André Dietrich |                                           |
-| -------------- | ----------------------------------------- |
-| web:           | http://eos.cs.ovgu.de/crew/dietrich/      |
-| eMail:         | dietrich@ivs.cs.uni-magdeburg.de          |
