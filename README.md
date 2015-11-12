@@ -49,11 +49,27 @@ ordinary ros-package. Three additional dependencies are required before you can 
   ```
 
 - r-cran-rcpp includes all required C source to develop R packages
+
   ``` bash
   $ sudo apt-get install r-cran-rcpp
   ```
 
-Afterwards compile this package ... That's all folks!
+Afterwards compile this package with `catkin_make`... That's all folks!
+
+If the compilation fails, because lib `lRcpp` was not found, search for it:
+
+``` bash
+$ locate Rcpp.so
+/usr/lib/R/site-library/Rcpp/libs/Rcpp.so
+```
+enter the directory and create a symbolic link:
+
+``` bash
+$ cd /lib/R/site-library/Rcpp/libs
+$ sudo ln -s Rcpp.so libRcpp.so
+$ cd -
+```
+and run `catkin_make` again ...
 
 ### R-Side
 
