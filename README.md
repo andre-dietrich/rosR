@@ -2,39 +2,42 @@
 
 | | |
 | -------------- | ---------------------------------------------------------------------------------------- |
-| Authors        | André Dietrich & Sebastian Zug                                                           |
-| Source (64bit) | `git clone` https://gitlab.com/OvGU-ESS/rosR.git                                         |
-|        (32bit) | `git clone -b 32-bit` https://gitlab.com/OvGU-ESS/rosR.git                               |
-| Email          | <mailto:dietrich@ivs.cs.uni-magdeburg.de> & <mailto:zug@ivs.cs.uni-magdeburg.de>         |
+| Author         | André Dietrich                                                           |
+| Source (64bit) | `git clone` https://gitlab.com/andre-dietrich/rosR.git                                         |
+|        (32bit) | `git clone -b 32-bit` https://gitlab.com/andre-dietrich/rosR.git                               |
+| Email          | <mailto:andre.dietrich@ovgu.de>         |
 | Publication    | [The R in Robotics](http://journal.r-project.org/archive/2013-2/dietrich-zug-kaiser.pdf) |
 | Talk By        | Jan Wijffels http://www.r-bloggers.com/using-r-in-robotics-applications-with-ros         |
 
 ## Overview
 
-This package provides an simple interface of standard ros-functionalities for the programming
-language R. We hope that it might be useful to make the R capabilities for statistical
-analyses and visualization also usable for the robotic community. In contrast to other language
-implementations, such as rospy, rosjava, etc. this is not a pure R implementation, it is a
-mixture of pure R, SWIG generated functions, and system commands. This combination was required
-to overcome some limitations of R, such as single threaded, lacking support for sockets and
-handling of raw streams. Nevertheless, this package can be used to define and use typical ROS
-publishers and subscribers in R, messages are automatically and online generated from the
-definition files, and it integrates the possibility to read and therefore analyse bag-files in
-R. We will explain this in more detail within the next sections.
+This package provides an simple interface of standard ros-functionalities for
+the programming language R. We hope that it might be useful to make the R
+capabilities for statistical analyses and visualization also usable for the
+robotic community. In contrast to other language implementations, such as rospy,
+rosjava, etc. this is not a pure R implementation, it is a mixture of pure R,
+SWIG generated functions, and system commands. This combination was required to
+overcome some limitations of R, such as single threaded, lacking support for
+sockets and handling of raw streams. Nevertheless, this package can be used to
+define and use typical ROS publishers and subscribers in R, messages are
+automatically and online generated from the definition files, and it integrates
+the possibility to read and therefore analyse bag-files in R. We will explain
+this in more detail within the next sections.
 
-See also [rosR_demos](https://gitlab.com/OvGU-ESS/rosR_demos.git).
+See also [rosR_demos](https://gitlab.com/andre-dietrich/rosR_demos.git).
 
 ## Installation
 
-We divided this section into two parts. For those who come from the ROS side, it will be
-probably easy to install and to use this packet (of course they will probably have to cope with
-the R-code). Coming from the R side with no experience about ROS, it will be hard to install
-and run this package.
+We divided this section into two parts. For those who come from the ROS side, it
+will be probably easy to install and to use this packet (of course they will
+probably have to cope with the R-code). Coming from the R side with no
+experience about ROS, it will be hard to install and run this package.
 
 ### ROS-Side
 
-If you have already some expertise on working with ROS, then you can install rosR just like any
-ordinary ros-package. Three additional dependencies are required before you can compile it:
+If you have already some expertise on working with ROS, then you can install
+rosR just like any ordinary ros-package. Three additional dependencies are
+required before you can compile it:
 
 - Swig3.0 is required for interfacing C code, and only swig3.0 can generate appropriate code
   for R.
